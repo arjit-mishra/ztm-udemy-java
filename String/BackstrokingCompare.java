@@ -1,13 +1,13 @@
 package String;
 
-class BackstringCompare {
+class BackstrokingCompare {
     public static void main(String[] args) {
-        System.out.println("ab#c - ad#c = " + comapre("ab#c", "ad#c"));
-        System.out.println("ab## - c#d# = " + comapre("ab##", "c#d#"));
-        System.out.println("a#c - b = " + comapre("a#c", "b"));
+        System.out.println("ab#c - ad#c = " + compare("ab#c", "ad#c"));
+        System.out.println("ab## - c#d# = " + compare("ab##", "c#d#"));
+        System.out.println("a#c - b = " + compare("a#c", "b"));
     }
 
-    private static boolean comapre(String s, String t) {
+    private static boolean compare(String s, String t) {
 
         int p = s.length() - 1, q = t.length() - 1;
         int bcS = 0, bcT = 0;
