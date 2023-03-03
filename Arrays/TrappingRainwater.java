@@ -3,9 +3,9 @@ import java.util.Arrays;
 public class TrappingRainwater {
 
     public static void main(String[] args) {
-        int elevationArray[] = { 0, 1, 0, 2, 1, 0, 3, 1, 0, 1, 2 };
-        int elevationArray2[] = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
-        int elevationArray3[] = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+        int[] elevationArray = { 0, 1, 0, 2, 1, 0, 3, 1, 0, 1, 2 };
+        int[] elevationArray2 = { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
+        int[] elevationArray3 = { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
 
         System.out.println("Brute force");
         System.out
@@ -47,7 +47,7 @@ public class TrappingRainwater {
                 rp++;
             }
 
-            // calulate water wi9th formula and add to the solution
+            // calculate water with formula and add to the solution
             int currentWater = Math.min(maxL, maxR) - elevationArray[p];
 
             if (currentWater >= 0)
