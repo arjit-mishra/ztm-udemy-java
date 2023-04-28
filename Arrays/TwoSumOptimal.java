@@ -5,7 +5,7 @@ import java.util.Map;
 public class TwoSumOptimal {
 
     public static void main(String[] args) {
-        int arr[] = { 2, 7, 11, 15 };
+        int[] arr = { 2, 7, 11, 15 };
         System.out.println(Arrays.toString(twoSum(arr, 9)));
     }
 

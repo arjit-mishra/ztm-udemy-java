@@ -25,7 +25,7 @@ public class AlmostPalindrome {
         if (s.length() < 2)
             return true;
 
-        char ch[] = s.toCharArray();
+        char[] ch = s.toCharArray();
         int lp = 0, rp = ch.length - 1;
 
         while (lp <= rp) {

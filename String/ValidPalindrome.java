@@ -54,7 +54,7 @@ public class ValidPalindrome {
         if (s.length()<2)
             return true;
 
-        char ch[] = s.toCharArray();
+        char[] ch = s.toCharArray();
         int mid = ch.length / 2;
         int rp = mid, lp = mid;
 
@@ -75,7 +75,7 @@ public class ValidPalindrome {
         if (s.length()<2)
             return true;
 
-        char ch[] = s.toCharArray();
+        char[] ch = s.toCharArray();
         int lp = 0, rp = ch.length - 1;
 
         while(lp<=rp) {
